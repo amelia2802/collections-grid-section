@@ -93,3 +93,72 @@ body > h1{
   color: #000;
   font-weight: bold;
 }
+
+@media only screen and (max-width:768px) {
+  .product{
+    padding: 0 1rem;
+  }
+  .card{
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: whitesmoke;
+    overflow: hidden;
+  }
+  .card:nth-child(1){
+    width: 20rem;
+    height: 35rem;
+    grid-row: 1/ span 2;
+    background-image: url('https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/cozy-comfort.jpg');
+  }
+  .card h1{
+    bottom: 4rem;
+    font-size: .9rem;
+  }
+  
+  .card p{
+    font-size: .9rem;
+  }
+
+}
+
+
+@media only screen and (max-width:540px) {
+  body > h1{
+    width: 60%;
+    margin-top:3rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .product{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    margin: 0 6rem;
+  }
+
+  .card{
+    width:15rem;
+    height:15rem;
+    background-size: 100vw;
+  }
+
+  .card:nth-child(1){
+    width: 15rem;
+    height: 25rem;
+  }
+  
+  .card h1{
+    bottom: 4rem;
+    font-size: .9rem;
+  }
+  
+  .card p{
+    font-size: .9rem;
+  }
+
+}
